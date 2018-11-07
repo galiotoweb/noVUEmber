@@ -1,0 +1,21 @@
+<html>
+  <body>
+    <div id="day-three">
+      <h1>{{ hello }}</h1>
+      <p><button id="first" class="btn">{{ instruction }}</button></p>
+      <p><button id="second" class="btn">{{ instruction }}</button></p>
+    </div>
+    <script src="https://unpkg.com/vue"></script>
+    <script>
+      new Vue({
+        el: '#day-three',
+        data: { hello: 'It\'s Day Three' , instruction: 'Click Me!' }
+      })
+    </script>
+    <style scoped lang="scss">
+      body {
+        background-color: #eeeeee;
+      }
+    </style>
+  </body>
+</html>
