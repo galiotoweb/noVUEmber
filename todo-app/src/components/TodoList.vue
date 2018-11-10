@@ -16,7 +16,7 @@ export default {
   components: {
     Todo,
   },
-}
+};
 </script>
 <style>
 </style>
