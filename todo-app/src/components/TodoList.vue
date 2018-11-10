@@ -11,7 +11,8 @@
 <script type = "text/javascript" >
 
 export default {
-};
+  props: ['todos'],
+}
 </script>
 <style>
 </style>
