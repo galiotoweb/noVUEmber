@@ -1,14 +1,18 @@
 <template>
-  <!-- JavaScript expressions in Vue are enclosed in double curly brackets. -->
   <div>
-    <p>Completed Tasks: {{todos.filter(todo => {return todo.done === true}).length}}</p>
-    <p>Pending Tasks: {{todos.filter(todo => {return todo.done === false}).length}}</p>
-    <todo  v-on:delete-todo="deleteTodo" v-for="todo in todos" v-bind:todo="todo"/>
+    <p class="tasks">Completed Tasks:
+      {{todos.filter(todo => {return todo.done === true}).length}}</p>
+    <p class="tasks">Pending Tasks:
+      {{todos.filter(todo => {return todo.done === false}).length}}</p>
+    <todo v-on:delete-todo="deleteTodo"
+      v-on:complete-todo="completeTodo"
+      v-for="todo in todos"
+      :todo.sync="todo" :key="todo"/>
   </div>
 </template>
 
 <script type = "text/javascript" >
-// import sweetalert from 'sweetalert';
+import sweetalert from 'sweetalert';
 import Todo from './Todo';
 
 export default {
@@ -20,9 +24,19 @@ export default {
     deleteTodo(todo) {
       const todoIndex = this.todos.indexOf(todo);
       this.todos.splice(todoIndex, 1);
+      sweetalert('Deleted!', 'Your To-Do has been deleted.', 'success');
+    },
+    completeTodo(todo) {
+      const todoIndex = this.todos.indexOf(todo);
+      this.todos[todoIndex].done = true;
+      sweetalert('Success!', 'To-Do completed!', 'success');
     },
   },
 };
 </script>
-<style>
+
+<style scoped>
+p.tasks {
+  text-align: center;
+}
 </style>

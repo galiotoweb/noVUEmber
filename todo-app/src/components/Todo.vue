@@ -1,6 +1,5 @@
 <template>
   <div class='ui centered card'>
-    <!-- Todo shown when we are not in editing mode. -->
     <div class="content" v-show="!isEditing">
       <div class='header'>
           {{ todo.title }}
@@ -9,7 +8,7 @@
           {{ todo.project }}
       </div>
       <div class='extra content'>
-        <span class='right floated edit icon' v-on:click="showForm">
+          <span class='right floated edit icon' v-on:click="showForm">
           <i class='edit icon'></i>
         </span>
         <span class='right floated trash icon' v-on:click="deleteTodo(todo)">
@@ -38,7 +37,8 @@
     <div class='ui bottom attached green basic button' v-show="!isEditing &&todo.done" disabled>
         Completed
     </div>
-    <div class='ui bottom attached red basic button' v-show="!isEditing && !todo.done">
+    <div class='ui bottom attached red basic button' v-on:click="completeTodo(todo)"
+      v-show="!isEditing && !todo.done">
         Pending
     </div>
   </div>
@@ -53,6 +53,9 @@ export default {
     };
   },
   methods: {
+    completeTodo(todo) {
+      this.$emit('complete-todo', todo);
+    },
     deleteTodo(todo) {
       this.$emit('delete-todo', todo);
     },
