@@ -1,6 +1,12 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <h2>Projects</h2>
+    <ul>
+      <li>
+        <!-- <router-link to="/todo-app">Todo App</router-link> -->
+      </li>
+    </ul>
     <h2>Essential Links</h2>
     <ul>
       <li>
@@ -9,22 +15,6 @@
           target="_blank"
         >
           Core Docs
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://forum.vuejs.org"
-          target="_blank"
-        >
-          Forum
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://chat.vuejs.org"
-          target="_blank"
-        >
-          Community Chat
         </a>
       </li>
       <li>
@@ -85,10 +75,10 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'Welcome',
   data() {
     return {
-      msg: 'Welcome to Your First Vue.js App',
+      msg: 'Thirty Days of Vue.js Apps',
     };
   },
 };
