@@ -1,27 +1,18 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2>Projects</h2>
-    <ul>
-      <li>
-        <!-- <router-link to="/todo-app">Todo App</router-link> -->
-      </li>
-    </ul>
     <h2>Essential Links</h2>
     <ul>
       <li>
         <a
           href="https://vuejs.org"
-          target="_blank"
-        >
+          target="_blank">
           Core Docs
         </a>
       </li>
       <li>
         <a
           href="https://twitter.com/vuejs"
-          target="_blank"
-        >
+          target="_blank">
           Twitter
         </a>
       </li>
@@ -29,8 +20,7 @@
       <li>
         <a
           href="http://vuejs-templates.github.io/webpack/"
-          target="_blank"
-        >
+          target="_blank">
           Docs for This Template
         </a>
       </li>
@@ -40,32 +30,28 @@
       <li>
         <a
           href="http://router.vuejs.org/"
-          target="_blank"
-        >
+          target="_blank">
           vue-router
         </a>
       </li>
       <li>
         <a
           href="http://vuex.vuejs.org/"
-          target="_blank"
-        >
+          target="_blank">
           vuex
         </a>
       </li>
       <li>
         <a
           href="http://vue-loader.vuejs.org/"
-          target="_blank"
-        >
+          target="_blank">
           vue-loader
         </a>
       </li>
       <li>
         <a
           href="https://github.com/vuejs/awesome-vue"
-          target="_blank"
-        >
+          target="_blank">
           awesome-vue
         </a>
       </li>
@@ -74,14 +60,7 @@
 </template>
 
 <script>
-export default {
-  name: 'Welcome',
-  data() {
-    return {
-      msg: 'Thirty Days of Vue.js Apps',
-    };
-  },
-};
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

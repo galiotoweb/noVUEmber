@@ -7,8 +7,8 @@
 
 <script>
 import sweetalert from 'sweetalert';
-import TodoList from './components/TodoList';
-import CreateTodo from './components/CreateTodo';
+import TodoList from './todo-components/TodoList';
+import CreateTodo from './todo-components/CreateTodo';
 
 export default {
   name: 'app',
