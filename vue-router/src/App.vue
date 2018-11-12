@@ -35,8 +35,11 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 #app {
-
+  h1 {
+    padding-top: 100px;
+    text-align: center;
+  }
 }
 </style>
