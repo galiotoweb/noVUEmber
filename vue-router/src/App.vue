@@ -13,13 +13,13 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="../blog/">Blog</a>
+            <router-link class="nav-link" to="/blog">Blog</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../services">Services</a>
+            <router-link class="nav-link" to="/services">Services</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../contact/">Contact</a>
+            <router-link class="nav-link" to="/contact">Contact</router-link>
           </li>
         </ul>
       </div>
