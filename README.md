@@ -23,7 +23,7 @@ vue init webpack noVUEmber
 ### My Setup
 
 ```
-? Install vue-router? No
+? Install vue-router? Yes
 ? Use ESLint to lint your code? Yes
 ? Pick an ESLint preset Airbnb
 ? Set up unit tests Yes
