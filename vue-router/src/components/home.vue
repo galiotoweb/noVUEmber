@@ -2,11 +2,11 @@
   <div class="container home">
     <h1>{{ title }}</h1>
     <div class="row">
-      <div @click="goTodetail()" class="col-md-4 col-lg-4"
+      <div @click="goTodetail(data.productId)" class="col-md-4 col-lg-4"
       v-for="(data,index) in products"
       :key="index">
         <img :src="data.image" class="img-fluid">
-        <h3>{{data.productTitle}}</h3>
+        <h3 @click="goTodetail(data.productId)">{{data.productTitle}}</h3>
       </div>
     </div>
   </div>
@@ -18,7 +18,6 @@ export default {
   data() {
     return {
       title: 'Home',
-      // https://source.unsplash.com/random
       products: [
         {
           productTitle: 'ABC',
@@ -54,9 +53,12 @@ export default {
     };
   },
   methods: {
-    goTodetail() {
+    goTodetail(productId) {
       this.$router.push({
         name: 'details',
+        params: {
+          Pid: productId,
+        },
       });
     },
   },
@@ -65,5 +67,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+.img-fluid {
+  width: 100%;
+  max-height: 200px;
+  overflow: hidden;
+}
 </style>
