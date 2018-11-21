@@ -1,7 +1,7 @@
 {
-  "name": "novuember",
+  "name": "vue-router",
   "version": "1.0.0",
-  "description": "Writing Vue.js apps in November.",
+  "description": "How to use Vue Router https://medium.freecodecamp.org/how-to-use-routing-in-vue-js-to-create-a-better-user-experience-98d225bbcdd9",
   "author": "LeeAnne Galioto <leeanne@helloample.com>",
   "private": true,
   "scripts": {
@@ -14,7 +14,8 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "vue": "^2.5.2"
+    "vue": "^2.5.2",
+    "vue-router": "^3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -51,8 +52,8 @@
     "karma": "^1.4.1",
     "karma-coverage": "^1.1.1",
     "karma-mocha": "^1.3.0",
-    // "karma-phantomjs-launcher": "^1.0.2",
-    // "karma-phantomjs-shim": "^1.4.0",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "karma-phantomjs-shim": "^1.4.0",
     "karma-sinon-chai": "^1.3.1",
     "karma-sourcemap-loader": "^0.3.7",
     "karma-spec-reporter": "0.0.31",
