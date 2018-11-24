@@ -6,7 +6,8 @@
     <h2>Projects</h2>
     <ul>
       <li>
-        <!-- <router-link to="/todo-app">Todo App</router-link> -->
+        <router-link to="/hello-world">Hello World</router-link>
+        <router-view/>
       </li>
     </ul>
     <HelloWorld/>
