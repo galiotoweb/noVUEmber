@@ -1,10 +1,10 @@
 # noVUEmber
 
-For the 30 days of November, I'm writing as many Vue.js apps as I can as I learn the framework.
+For the 30 days of November, I'm writing Vue.js apps.
 
 This idea was created by @zarahzachs
 
-My goal is to learn the framework, so initially, many of these apps will be very basic in design.
+My goal is to practice and learn the framework, so initially, many of these apps will be very basic in design.
 
 ## Getting Started
 

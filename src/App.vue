@@ -1,8 +1,7 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <h1>#noVUEmber</h1>
-    <h2>Thirty Days of Vue.js Apps</h2>
+    <h1 class="site-title"><img class="logo" src="./assets/logo.png"> #noVUEmber</h1>
+    <h2 class="site-tagline">Thirty Days of Vue.js Apps</h2>
     <h2>Projects</h2>
     <ul>
       <li>
@@ -17,7 +16,6 @@
 </template>
 
 <script>
-// import sweetalert from 'sweetalert';
 import HelloWorld from './components/HelloWorld';
 
 export default {
@@ -28,7 +26,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -36,9 +34,20 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+
+  .logo {
+    width: 40px;
+    height: auto;
+  }
 }
 h1, h2 {
   font-weight: normal;
+}
+.site-title {
+  margin-bottom: 10px;
+}
+.site-tagline {
+  margin-top: 10px;
 }
 ul {
   list-style-type: none;
