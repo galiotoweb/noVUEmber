@@ -7,14 +7,17 @@
     <ul>
       <li>
         <router-link to="/hello-world">Hello World</router-link>
-        <router-view/>
+      </li>
+      <li>
+        <router-link to="/todo-app">To Do App</router-link>
       </li>
     </ul>
-    <HelloWorld/>
+    <router-view/>
   </div>
 </template>
 
 <script>
+// import sweetalert from 'sweetalert';
 import HelloWorld from './components/HelloWorld';
 
 export default {
