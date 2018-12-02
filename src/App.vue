@@ -10,6 +10,9 @@
       <li>
         <router-link to="/todo-app">To Do App</router-link>
       </li>
+      <li>
+        <router-link to="/vue-router">Vue Router App</router-link>
+      </li>
     </ul>
     <router-view/>
   </div>

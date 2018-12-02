@@ -1,11 +1,11 @@
 <template>
   <div id="vue-router-app">
     <!-- menu -->
-    <div class="ui menu">
-      <router-link to="/" class="item">Home</router-link>
-      <router-link to="/blog" class="item">Blog</router-link>
-      <router-link to="/services" class="item">Services</router-link>
-      <router-link to="/contact" class="item">Contact</router-link>
+    <div class="ui stackable four fluid item menu">
+      <router-link to="/vue-router/" class="item">Home</router-link>
+      <router-link to="/vue-router/blog" class="item">Blog</router-link>
+      <router-link to="/vue-router/services" class="item">Services</router-link>
+      <router-link to="/vue-router/contact" class="item">Contact</router-link>
     </div>
     <transition name="moveInUp">
       <router-view/>
